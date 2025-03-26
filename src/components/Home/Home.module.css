@@ -5,6 +5,7 @@
   justify-content: space-evenly;
   gap: 50px;
   padding: 10px;
+  height: 100%;
 }
 .homeImg {
   width: 100%;
