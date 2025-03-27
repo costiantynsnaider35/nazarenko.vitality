@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 const Header = lazy(() => import("./components/Header/Header.jsx"));
 const Loader = lazy(() => import("./components/Loader/Loader.jsx"));
@@ -19,10 +20,11 @@ const ReviewsPage = lazy(() => import("./pages/ReviewsPage/ReviewsPage.jsx"));
 const App = () => {
   return (
     <div className="app">
+      <Toaster position="top-center" />
       <Header />
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutMePage />} />
           <Route path="/forwhom" element={<ForWhomPage />} />
           <Route path="/usefulinfo" element={<UsefulInfoPage />} />
