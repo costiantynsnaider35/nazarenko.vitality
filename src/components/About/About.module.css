@@ -49,7 +49,7 @@
 }
 
 .aboutSertGaleryList img {
-  width: 165px;
+  width: 150px;
   height: 200px;
   object-fit: cover;
   object-position: center;
@@ -73,7 +73,7 @@
     height: 520px;
     padding: 15px;
   }
-  /* .aboutSertGaleryList {
+  .aboutSertGaleryList {
     gap: 30px;
   }
   .aboutSertGaleryItem {
@@ -91,7 +91,7 @@
     border-radius: 10px;
     border: 2px solid transparent;
     box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.5);
-  } */
+  }
 }
 @media screen and (min-width: 1440px) {
   .aboutContainer {
