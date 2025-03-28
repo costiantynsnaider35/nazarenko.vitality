@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
+  padding: 10px;
 }
 
 .aboutContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
 }
 .aboutImg {
   width: 100%;
@@ -25,12 +25,25 @@
   justify-content: center;
   gap: 20px;
 }
-.aboutCert {
+.aboutSertGaleryList {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.aboutSertGaleryItem {
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  width: calc((100% - 2 * 5px) / 3);
+  width: 170px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.5);
 }
 
 @media screen and (min-width: 768px) {
@@ -40,8 +53,13 @@
   .aboutTitle {
     gap: 10px;
   }
-  .aboutCert {
+  .aboutSertGaleryList {
     gap: 10px;
+  }
+  .aboutSertGaleryItem {
+    width: calc((100% - 3 * 10px) / 2);
+    width: 238px;
+    height: 300px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -63,7 +81,11 @@
     width: 705px;
     gap: 30px;
   }
-  .aboutCert {
-    flex-direction: row;
+  .aboutSertGaleryList {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .aboutSertGaleryItem {
+    width: 500px;
   }
 }
