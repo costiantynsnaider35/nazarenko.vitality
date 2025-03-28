@@ -72,9 +72,9 @@
     height: 520px;
     padding: 15px;
   }
-  /* .aboutSertGaleryList {
-    gap: 10px;
-  } */
+  .aboutSertGaleryItem {
+    width: calc((100% - 3 * 10px) / 2);
+  }
 
   .aboutSertGaleryList img {
     width: 235px;
