@@ -73,18 +73,15 @@
     padding: 15px;
   }
   .aboutSertGaleryItem {
-    width: calc((100% - 3 * 10px) / 2);
+    width: calc((100% - 3 * 5px) / 2);
   }
 
   .aboutSertGaleryList img {
-    width: 235px;
+    width: 200px;
     height: 270px;
   }
 }
 @media screen and (min-width: 1440px) {
-  /* .about {
-    width: auto;
-  } */
   .aboutContainer {
     display: flex;
     flex-direction: row;
