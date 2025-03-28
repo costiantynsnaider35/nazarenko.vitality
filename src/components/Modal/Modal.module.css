@@ -15,8 +15,11 @@
   background: #fff;
   padding: 10px;
   border-radius: 10px;
-  text-align: center;
-  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
   position: relative;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -103,10 +106,7 @@
   text-shadow: 4px 4px 10px gray;
 }
 
-@media screen and (min-width: 768px) {
-  .modalContent {
-    width: 700px;
-  }
+@media (min-width: 769px) and (max-width: 1024px) {
   .closeButton {
     font-size: 32px;
     font-weight: 700;
@@ -122,7 +122,6 @@
 
   .modalInput {
     font-size: 18px;
-    width: 680px;
   }
 
   .modalBtn span {
@@ -130,7 +129,32 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 1025px) {
+  .modalContent {
+    width: 900px;
+  }
+  .closeButton {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .modalTitle {
+    font-size: 48px;
+  }
+
+  .modalItem {
+    font-size: 32px;
+  }
+
+  .modalInput {
+    width: 500px;
+    font-size: 24px;
+  }
+
+  .modalBtn span {
+    font-size: 40px;
+  }
+
   .modalBtn:hover {
     transform: scale(1.1);
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8);

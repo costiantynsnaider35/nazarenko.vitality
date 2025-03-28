@@ -8,9 +8,7 @@
 }
 .homeImg {
   width: 100%;
-  height: 60vh;
   object-fit: cover;
-  object-position: 10% 50%;
   border-radius: 10px;
   z-index: 1;
 }
@@ -24,58 +22,55 @@
   z-index: 2;
 }
 .homeTitle h1 {
-  font-size: 38px;
+  font-size: 48px;
   font-weight: 700;
   text-shadow: 1px 1px 0 #3da66f, 2px 2px 0 #6fcf97, 3px 3px 0 #b3e5ab,
     4px 4px 0 #eaf7e1;
 }
 .homeTitle h2 {
-  font-size: 34px;
+  font-size: 40px;
   font-weight: 500;
-  text-align: center;
   line-height: 1.1;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5),
     2px 2px 2px rgba(0, 0, 0, 0.5), 6px 6px 6px rgba(0, 0, 0, 0.7);
 }
 .homeTitle h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
   text-align: center;
   letter-spacing: -1.1px;
   transform: skewX(-5deg);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .home {
     gap: 20px;
-  }
-  .homeImg {
-    width: 100vh;
   }
 
   .homeTitle {
     gap: 20px;
   }
   .homeTitle h1 {
-    font-size: 55px;
+    font-size: 64px;
   }
   .homeTitle h2 {
-    font-size: 45px;
+    font-size: 56px;
   }
   .homeTitle h3 {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 1025px) {
   .home {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
+    gap: 10px;
   }
   .homeImg {
-    width: 705px;
+    width: 710px;
     height: 100vh;
   }
   .homeTitle {
@@ -83,17 +78,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 705px;
+    width: 700px;
     gap: 30px;
   }
   .homeTitle h1 {
     font-size: 72px;
-    letter-spacing: -1px;
-  }
-  .homeTitle h2 {
-    font-size: 64px;
-  }
-  .homeTitle h3 {
-    font-size: 36px;
   }
 }

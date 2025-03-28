@@ -28,8 +28,8 @@
 }
 
 .logo {
-  width: 50px;
-  height: 38px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,8 +43,8 @@
   gap: 10px;
 }
 .icon {
-  height: 38px;
-  width: 38px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -60,8 +60,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-evenly;
   text-align: center;
   background: linear-gradient(
     135deg,
@@ -85,7 +84,7 @@
   visibility: visible;
 }
 .navigation span {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   text-shadow: 4px 4px 10px gray;
 }
@@ -98,7 +97,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .consultationButton span {
-  font-size: 22px;
+  font-size: 32px;
+  font-weight: 500;
   text-shadow: 4px 4px 10px gray;
 }
 
@@ -115,41 +115,30 @@
   transform: rotate(90deg);
 }
 .iconMenu {
-  width: 38px;
-  height: 38px;
+  width: 60px;
+  height: 60px;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    width: 90px;
-    height: 60px;
-  }
+@media (min-width: 769px) and (max-width: 1024px) {
   .contactsList {
-    gap: 15px;
+    gap: 20px;
   }
-  .icon {
-    height: 60px;
-    width: 60px;
-  }
-  .iconMenu {
-    width: 60px;
-    height: 60px;
-  }
-  .navigation {
-    gap: 60px;
-  }
+
   .navigation span {
-    font-size: 50px;
+    font-size: 48px;
   }
   .consultationButton span {
-    font-size: 36px;
-    text-shadow: 4px 4px 10px gray;
+    font-size: 48px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 1025px) {
   .header {
     gap: 10px;
+  }
+  .logo {
+    width: 80px;
+    height: 50px;
   }
   .icon {
     height: 40px;
@@ -166,11 +155,11 @@
     opacity: 1;
     visibility: visible;
     width: auto;
+    gap: 30px;
   }
 
   .navigation span {
     font-size: 25px;
-    font-weight: 500;
   }
 
   .menuButton {
@@ -195,7 +184,7 @@
     padding: 5px;
   }
   .consultationButton span {
-    font-size: 16px;
+    font-size: 25px;
   }
   .consultationButton:hover {
     transform: scale(1.1);
