@@ -45,8 +45,8 @@ const About = () => {
         </li>
         <li>
           <img
-            src="/ser5 (1).jpg"
-            alt="ser5  img"
+            src="/ser6 (1).jpg"
+            alt="ser6  img"
             className={s.aboutSertGaleryItem}
           />
         </li>

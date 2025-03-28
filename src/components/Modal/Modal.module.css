@@ -19,19 +19,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 340px;
   position: relative;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .closeButton {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 1px;
+  right: 1px;
   background: none;
   border: none;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 40px;
@@ -44,7 +44,8 @@
 }
 
 .modalTitle {
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   font-size: 20px;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -106,55 +107,37 @@
   text-shadow: 4px 4px 10px gray;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .modalContent {
+    width: 500px;
+  }
+
   .closeButton {
     font-size: 32px;
-    font-weight: 700;
+    top: 15px;
+    right: 15px;
   }
 
   .modalTitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-size: 32px;
   }
 
   .modalItem {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .formGroup label {
+    font-size: 20px;
   }
 
   .modalInput {
-    font-size: 18px;
-  }
-
-  .modalBtn span {
-    font-size: 40px;
+    width: 400px;
   }
 }
 
-@media (min-width: 1025px) {
-  .modalContent {
-    width: 900px;
-  }
-  .closeButton {
-    font-size: 32px;
-    font-weight: 700;
-  }
-
-  .modalTitle {
-    font-size: 48px;
-  }
-
-  .modalItem {
-    font-size: 32px;
-  }
-
-  .modalInput {
-    width: 500px;
-    font-size: 24px;
-  }
-
-  .modalBtn span {
-    font-size: 40px;
-  }
-
+@media screen and (min-width: 1440px) {
   .modalBtn:hover {
     transform: scale(1.1);
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8);

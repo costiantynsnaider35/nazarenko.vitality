@@ -21,15 +21,16 @@
   background-color: #fceedd;
   position: relative;
   z-index: 10;
-  width: auto;
+  width: 355px;
+  height: 40px;
   position: sticky;
   top: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,8 +44,8 @@
   gap: 10px;
 }
 .icon {
-  width: 60px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -97,9 +98,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .consultationButton span {
-  font-size: 32px;
+  font-size: 16px;
   font-weight: 500;
-  text-shadow: 4px 4px 10px gray;
 }
 
 .menuButton {
@@ -115,25 +115,43 @@
   transform: rotate(90deg);
 }
 .iconMenu {
-  width: 60px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .header {
+    width: 748px;
+    height: 50px;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .iconMenu {
+    width: 40px;
+    height: 40px;
+  }
   .contactsList {
     gap: 20px;
   }
 
   .navigation span {
-    font-size: 48px;
+    font-size: 40px;
   }
   .consultationButton span {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 
-@media (min-width: 1025px) {
+@media screen and (min-width: 1440px) {
   .header {
+    width: auto;
+    height: 60px;
     gap: 10px;
   }
   .logo {
