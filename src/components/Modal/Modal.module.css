@@ -44,12 +44,14 @@
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .modalItem {
   font-size: 16px;
   margin-bottom: 20px;
   font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .modalForm {
@@ -60,13 +62,33 @@
   gap: 10px;
 }
 
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+
+.formGroup label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .modalInput {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 300px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+.modalInput:disabled {
+  background-color: #f0f0f0;
+}
+
 .modalBtn {
   padding: 10px;
   text-align: center;
@@ -75,10 +97,12 @@
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .modalBtn span {
   font-size: 30px;
   text-shadow: 4px 4px 10px gray;
 }
+
 @media screen and (min-width: 768px) {
   .modalContent {
     width: 700px;
@@ -100,10 +124,12 @@
     font-size: 18px;
     width: 680px;
   }
+
   .modalBtn span {
     font-size: 40px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .modalBtn:hover {
     transform: scale(1.1);

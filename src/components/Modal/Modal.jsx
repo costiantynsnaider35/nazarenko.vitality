@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import s from "./Modal.module.css";
 import toast from "react-hot-toast";
+import { motion, AnimatePresence } from "framer-motion"; // Импортируем AnimatePresence
 
 const Modal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
     fullName: "",
-    phone: "",
+    phone: "+380", // Устанавливаем начальное значение для телефона
     comment: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -60,67 +61,96 @@ const Modal = ({ isOpen, onClose }) => {
       setIsSubmitted(true);
       setFormData({
         fullName: "",
-        phone: "",
+        phone: "+380", // Сбрасываем поле телефона
         comment: "",
       });
       toast.success("Вы успешно записались на бесплатную консультацию!");
       onClose();
     } catch {
       toast.error(
-        "Извените,произошла ошибка при записи на бесплатную консультацию!Попробуйте,пожалуйста,еще раз!"
+        "Извините, произошла ошибка при записи на бесплатную консультацию! Попробуйте, пожалуйста, еще раз!"
       );
     }
   };
 
-  if (!isOpen) return null;
-
   return (
-    <div className={s.modalOverlay} onClick={onClose}>
-      <div className={s.modalContent} onClick={(e) => e.stopPropagation()}>
-        <button className={s.closeButton} onClick={onClose}>
-          ×
-        </button>
-        <h2 className={s.modalTitle}>Запись на бесплатную консультацию</h2>
-        <p className={s.modalItem}>
-          Первая бесплатная консультация длится 15-30 минут. Оставьте свои
-          данные, и я обязательно Вам перезвоню!
-        </p>
-        <form className={s.modalForm} onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="fullName"
-            placeholder="Имя и фамилия"
-            value={formData.fullName}
-            onChange={handleChange}
-            required
-            className={s.modalInput}
-            disabled={isSubmitted} // Блокируем поля, если форма отправлена
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Телефон"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-            className={s.modalInput}
-            disabled={isSubmitted} // Блокируем поля, если форма отправлена
-          />
-          <textarea
-            name="comment"
-            placeholder="Комментарий"
-            value={formData.comment}
-            onChange={handleChange}
-            rows="4"
-            className={s.modalInput}
-            disabled={isSubmitted} // Блокируем поля, если форма отправлена
-          />
-          <button className={s.modalBtn} type="submit" disabled={isSubmitted}>
-            <span>{isSubmitted ? "Вы уже записались" : "Записаться"}</span>
-          </button>
-        </form>
-      </div>
-    </div>
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          className={s.modalOverlay}
+          onClick={onClose}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <motion.div
+            className={s.modalContent}
+            onClick={(e) => e.stopPropagation()}
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0.8 }}
+            transition={{ duration: 0.3 }}
+          >
+            <button className={s.closeButton} onClick={onClose}>
+              ×
+            </button>
+            <h2 className={s.modalTitle}>Запись на бесплатную консультацию</h2>
+            <p className={s.modalItem}>
+              Первая бесплатная консультация длится 15-30 минут. Оставьте свои
+              данные, и я обязательно Вам перезвоню!
+            </p>
+            <form className={s.modalForm} onSubmit={handleSubmit}>
+              <div className={s.formGroup}>
+                <label htmlFor="fullName">Имя и фамилия</label>
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullName"
+                  value={formData.fullName}
+                  onChange={handleChange}
+                  required
+                  className={s.modalInput}
+                  disabled={isSubmitted}
+                />
+              </div>
+              <div className={s.formGroup}>
+                <label htmlFor="phone">Телефон</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  className={s.modalInput}
+                  disabled={isSubmitted}
+                />
+              </div>
+              <div className={s.formGroup}>
+                <label htmlFor="comment">Комментарий</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  value={formData.comment}
+                  onChange={handleChange}
+                  rows="4"
+                  className={s.modalInput}
+                  disabled={isSubmitted}
+                />
+              </div>
+              <button
+                className={s.modalBtn}
+                type="submit"
+                disabled={isSubmitted}
+              >
+                <span>{isSubmitted ? "Вы уже записались" : "Записаться"}</span>
+              </button>
+            </form>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 

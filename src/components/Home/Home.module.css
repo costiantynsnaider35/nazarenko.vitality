@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 25px;
+  justify-content: center;
+  gap: 15px;
   padding: 10px;
 }
 .homeImg {
@@ -12,22 +12,25 @@
   object-fit: cover;
   object-position: 10% 50%;
   border-radius: 10px;
+  z-index: 1;
 }
+
 .homeTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
+  z-index: 2;
 }
 .homeTitle h1 {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 700;
   text-shadow: 1px 1px 0 #3da66f, 2px 2px 0 #6fcf97, 3px 3px 0 #b3e5ab,
     4px 4px 0 #eaf7e1;
 }
 .homeTitle h2 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 500;
   text-align: center;
   line-height: 1.1;
@@ -43,21 +46,24 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 @media screen and (min-width: 768px) {
+  .home {
+    gap: 20px;
+  }
   .homeImg {
     width: 100vh;
   }
 
   .homeTitle {
-    gap: 15px;
+    gap: 20px;
   }
   .homeTitle h1 {
-    font-size: 50px;
+    font-size: 55px;
   }
   .homeTitle h2 {
-    font-size: 40px;
+    font-size: 45px;
   }
   .homeTitle h3 {
-    font-size: 30px;
+    font-size: 36px;
   }
 }
 
@@ -66,13 +72,11 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 10px;
+    justify-content: space-around;
   }
   .homeImg {
     width: 705px;
-    height: 600px;
-    border-radius: 10px;
-    object-fit: cover;
+    height: 100vh;
   }
   .homeTitle {
     display: flex;
