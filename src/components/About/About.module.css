@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 15px;
   padding: 10px;
-  width: 355px;
+  width: auto;
 }
 
 .aboutContainer {
@@ -60,7 +60,6 @@
 @media screen and (min-width: 768px) {
   .about {
     gap: 20px;
-    width: 748px;
   }
   .aboutImg {
     width: 744px;
@@ -83,9 +82,9 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .about {
+  /* .about {
     width: auto;
-  }
+  } */
   .aboutContainer {
     display: flex;
     flex-direction: row;
