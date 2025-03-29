@@ -31,7 +31,7 @@
 }
 
 .homeTitle h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: -1.1px;
   white-space: nowrap;
@@ -39,7 +39,7 @@
     4px 4px 0 #eaf7e1;
 }
 .homeTitle h2 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: -1.1px;
   white-space: nowrap;
@@ -47,7 +47,7 @@
     2px 2px 2px rgba(0, 0, 0, 0.5), 6px 6px 6px rgba(0, 0, 0, 0.7);
 }
 .homeTitle h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: -1.1px;
   white-space: nowrap;
