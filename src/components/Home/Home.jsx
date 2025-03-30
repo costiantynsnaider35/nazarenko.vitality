@@ -11,7 +11,7 @@ const Home = () => {
         <h3>Жизнь хороша, когда жуешь не спеша! &#128522;</h3>
       </div>
       <div>
-        <img src="/hero.jpg" alt="Home img" className={s.homeImg} />
+        <img src="/home.jpg" alt="Home img" className={s.homeImg} />
       </div>
     </div>
   );
