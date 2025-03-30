@@ -1,0 +1,96 @@
+.whom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
+}
+.whomTitle {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  word-spacing: 1px;
+  text-shadow: 1px 1px 0 #3da66f, 2px 2px 0 #6fcf97, 3px 3px 0 #b3e5ab,
+    4px 4px 0 #eaf7e1;
+}
+.whomList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.whomItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.5);
+}
+.whomIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  color: #936d03;
+}
+.whomItem span {
+  font-size: 20px;
+  font-weight: 500px;
+  word-spacing: -1.1px;
+  margin-left: 1px;
+}
+.whom img {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.5);
+}
+@media screen and (min-width: 768px) {
+  .whom {
+    gap: 20px;
+    padding: 20px;
+  }
+  .whomTitle {
+    font-size: 48px;
+  }
+  .whomList {
+    gap: 10px;
+  }
+
+  .whomIcon {
+    height: 48px;
+    width: 48px;
+  }
+  .whomItem span {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .whom {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: auto;
+    gap: 30px;
+  }
+  .whomTitle {
+    font-size: 64px;
+  }
+  .whomList {
+    justify-content: flex-start;
+  }
+  .whomItem {
+    width: auto;
+    justify-content: flex-start;
+  }
+  .whomItem span {
+    font-size: 32px;
+  }
+  .whom img {
+    width: 691px;
+  }
+}

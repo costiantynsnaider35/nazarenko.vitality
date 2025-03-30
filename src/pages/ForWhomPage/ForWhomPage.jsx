@@ -1,4 +1,10 @@
+import ForWhom from "../../components/ForWhom/ForWhom.jsx";
+
 const ForWhomPage = () => {
-  return <div>ForWhomPage</div>;
+  return (
+    <div>
+      <ForWhom />
+    </div>
+  );
 };
 export default ForWhomPage;
