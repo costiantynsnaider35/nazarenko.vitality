@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   padding: 10px 0;
-  gap: 20px;
   width: auto;
 }
 .homeTitle {
@@ -15,8 +14,10 @@
   gap: 30px;
   width: 351px;
   z-index: 2;
+  margin-top: 20px;
 }
 .homeImg {
+  margin-top: 20px;
   width: 351px;
   height: 350px;
   object-fit: cover;
