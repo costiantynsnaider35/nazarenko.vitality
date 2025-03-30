@@ -12,14 +12,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  gap: 30px;
+  justify-content: center;
+  gap: 50px;
   width: 351px;
   z-index: 2;
 }
 .homeImg {
   width: 351px;
-  height: 360px;
+  height: 400px;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid transparent;
