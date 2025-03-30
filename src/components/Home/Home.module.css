@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  padding: 10px;
+  padding: 10px 0;
   width: auto;
 }
 .homeTitle {
@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  width: 343px;
+  width: 351px;
   height: 350px;
   border-radius: 10px;
   border: 2px solid transparent;
@@ -21,7 +21,7 @@
   z-index: 2;
 }
 .homeImg {
-  width: 343px;
+  width: 351px;
   height: 350px;
   object-fit: cover;
   border-radius: 10px;
@@ -58,14 +58,14 @@
 @media screen and (min-width: 768px) {
   .home {
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0;
   }
   .homeTitle {
-    width: 714px;
+    width: 744px;
     height: 400px;
   }
   .homeImg {
-    width: 714px;
+    width: 744px;
     height: 400px;
     object-fit: cover;
     object-position: 10% 65%;
@@ -88,6 +88,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    gap: 30px;
   }
   .homeImg {
     width: 691px;
@@ -95,8 +96,7 @@
   }
   .homeTitle {
     width: 751px;
-    height: 631px;
-    padding: 30px;
+    height: 691px;
   }
   .homeTitle h1 {
     font-size: 80px;
