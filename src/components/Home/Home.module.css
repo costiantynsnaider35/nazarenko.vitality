@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  width: 347px;
+  width: 351px;
   height: 350px;
   border-radius: 10px;
   border: 2px solid transparent;
@@ -21,6 +21,9 @@
   z-index: 2;
 }
 .homeImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 351px;
   height: 350px;
   object-fit: cover;
