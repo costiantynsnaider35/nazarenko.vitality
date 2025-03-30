@@ -32,9 +32,6 @@
   justify-content: space-evenly;
   width: 351px;
   height: 296px;
-  border-radius: 10px;
-  border: 2px solid transparent;
-  box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.5);
 }
 .aboutSertGaleryList {
   display: grid;
