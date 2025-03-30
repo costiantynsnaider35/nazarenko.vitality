@@ -15,12 +15,12 @@
   justify-content: flex-start;
   gap: 30px;
   width: 351px;
-  height: 170px;
+  height: 200px;
   z-index: 2;
 }
 .homeImg {
   width: 351px;
-  height: 350px;
+  height: 360px;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid transparent;
