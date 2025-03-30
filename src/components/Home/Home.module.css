@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  min-width: 351px;
+  width: 351px;
   height: 350px;
   border-radius: 10px;
   border: 2px solid transparent;
@@ -37,7 +37,6 @@
   font-size: 30px;
   font-weight: 700;
   letter-spacing: -1.1px;
-  white-space: nowrap;
   text-shadow: 1px 1px 0 #3da66f, 2px 2px 0 #6fcf97, 3px 3px 0 #b3e5ab,
     4px 4px 0 #eaf7e1;
 }
@@ -45,7 +44,6 @@
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1.1px;
-  white-space: nowrap;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5),
     2px 2px 2px rgba(0, 0, 0, 0.5), 6px 6px 6px rgba(0, 0, 0, 0.7);
 }
@@ -53,7 +51,6 @@
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -1.1px;
-  white-space: nowrap;
   transform: skewX(-5deg);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
