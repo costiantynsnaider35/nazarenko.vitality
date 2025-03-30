@@ -1,7 +1,38 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const fruits = ["🍎", "🍌", "🍉", "🍒", "🍇", "🥕", "🌽", "🍓", "🥭", "🍍"];
+const elements = [
+  "🍎",
+  "🍌",
+  "🍉",
+  "🍒",
+  "🍇",
+  "🥕",
+  "🌽",
+  "🍓",
+  "🥭",
+  "🍍",
+  "🥥",
+  "🥛",
+  "🥔",
+  "🥒",
+  "🥬",
+  "🥦",
+  "🧅",
+  "🥜",
+  "🧄",
+  "🍆",
+  "🥑",
+  "🥝",
+  "🍓",
+  "🍅",
+  "🍐",
+  "🍑",
+  "🥣",
+  "🥗",
+  "☕",
+  "🧃",
+];
 
 const FruitRain = () => {
   const [items, setItems] = useState([]);
@@ -15,14 +46,13 @@ const FruitRain = () => {
         ...prev,
         {
           id: Math.random(),
-          emoji: fruits[Math.floor(Math.random() * fruits.length)],
+          emoji: elements[Math.floor(Math.random() * elements.length)],
           left: Math.random() * 100,
         },
       ]);
-    }, 100); // Появление новых фруктов
+    }, 100);
 
-    // Остановить анимацию через 5 секунд
-    setTimeout(() => setShowAnimation(false), 3000);
+    setTimeout(() => setShowAnimation(false), 5000);
 
     return () => clearInterval(interval);
   }, [showAnimation]);
@@ -44,12 +74,12 @@ const FruitRain = () => {
           key={item.id}
           initial={{ y: -50, opacity: 1 }}
           animate={{
-            y: "100vh", // Фрукты двигаются до низа экрана
+            y: "100vh",
             opacity: showAnimation ? 1 : 0, // Плавное исчезновение через 5 секунд
           }}
           transition={{
-            duration: 4, // Длительность анимации движения
-            ease: "easeInOut", // Плавное начало и конец анимации
+            duration: 4,
+            ease: "easeInOut",
           }}
           style={{
             position: "absolute",
