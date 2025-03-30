@@ -46,9 +46,6 @@
   margin-left: 1px;
 }
 .whom img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 10px;
   border: 2px solid transparent;
   box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.5);

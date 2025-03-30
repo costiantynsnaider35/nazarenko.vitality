@@ -14,9 +14,6 @@
   gap: 15px;
 }
 .aboutImg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 351px;
   height: 250px;
   object-fit: cover;
