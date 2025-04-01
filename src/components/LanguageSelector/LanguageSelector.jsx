@@ -1,4 +1,3 @@
-import React from "react";
 import s from "./LanguageSelector.module.css";
 
 const LanguageSelector = ({ onSelect }) => {

@@ -1,14 +1,15 @@
-import { lazy, Suspense, useEffect, useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Suspense, useState } from "react";
 import { Toaster } from "react-hot-toast";
+import { lazy } from "react";
 import Loader from "./components/Loader/Loader.jsx";
-import LanguageSelector from "./components/LanguageSelector/LanguageSelector.jsx";
+import Header from "./components/Header/Header.jsx";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "./components/LanguageSelector/LanguageSelector.jsx";
+import { motion, AnimatePresence } from "framer-motion";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./i18n.js";
 import "./App.css";
-import { motion, AnimatePresence } from "framer-motion";
 
-const Header = lazy(() => import("./components/Header/Header.jsx"));
 const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
 const AboutMePage = lazy(() => import("./pages/AboutMePage/AboutMePage.jsx"));
 const ForWhomPage = lazy(() => import("./pages/ForWhomPage/ForWhomPage.jsx"));
@@ -28,11 +29,6 @@ const App = () => {
   const { i18n } = useTranslation();
   const location = useLocation();
 
-  useEffect(() => {
-    const storedLang = localStorage.getItem("language") || "ru";
-    i18n.changeLanguage(storedLang);
-  }, [i18n]);
-
   const handleLanguageSelect = (lang) => {
     localStorage.setItem("language", lang);
     i18n.changeLanguage(lang);
@@ -42,10 +38,10 @@ const App = () => {
   return (
     <div className="app">
       <Toaster position="top-center" />
+      <Header />
       {showLanguageSelector && (
         <LanguageSelector onSelect={handleLanguageSelect} />
       )}
-      <Header />
       <Suspense fallback={<Loader />}>
         <AnimatePresence mode="wait">
           <motion.div

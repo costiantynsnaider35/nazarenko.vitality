@@ -28,9 +28,9 @@ const Header = () => {
 
   return (
     <div className={s.header}>
-      <a className={s.logo} href="/">
+      <NavLink to="/" className={s.logo}>
         <img src="/2.jpg" alt={t("header.logoAlt")} />
-      </a>
+      </NavLink>
 
       <div className={clsx(s.navigation, menuOpen && s.open)}>
         <NavLink to="/about" className={buildLinkClass} onClick={closeMenu}>
