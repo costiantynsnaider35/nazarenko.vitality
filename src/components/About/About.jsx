@@ -1,57 +1,51 @@
+import { useTranslation } from "react-i18next";
 import s from "./About.module.css";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={s.about}>
       <div className={s.aboutContainer}>
-        <img src="/about.jpg" alt="About img" className={s.aboutImg} />
-        <h1 className={s.aboutTitle}>ОБО МНЕ</h1>
+        <img
+          src="/about.jpg"
+          alt={t("about.aboutImageAlt")}
+          className={s.aboutImg}
+        />
+        <h1 className={s.aboutTitle}>{t("about.aboutText")}</h1>
       </div>
-      <ul className={s.aboutSertGaleryList}>
-        <li>
-          <img
-            src="/ser1 (1).jpg"
-            alt="ser1  img"
-            className={s.aboutSertGaleryItem}
-          />
-        </li>
-        <li>
-          <img
-            src="/ser2 (1).jpg"
-            alt="ser2  img"
-            className={s.aboutSertGaleryItem}
-          />
-        </li>
-        <li>
-          <img
-            src="/ser3 (1).jpg"
-            alt="ser3  img"
-            className={s.aboutSertGaleryItem}
-          />
-        </li>
-        <li>
-          <img
-            src="/ser4 (1).jpg"
-            alt="ser4  img"
-            className={s.aboutSertGaleryItem}
-          />
-        </li>
-        <li>
-          <img
-            src="/ser5 (1).jpg"
-            alt="ser5  img"
-            className={s.aboutSertGaleryItem}
-          />
-        </li>
-        <li>
-          <img
-            src="/ser6 (1).jpg"
-            alt="ser6  img"
-            className={s.aboutSertGaleryItem}
-          />
-        </li>
-      </ul>
+      <div className={s.aboutContainer2}>
+        <div>
+          <h1 className={s.aboutReviews}>{t("about.clientReviewsTitle")}</h1>
+          <ul className={s.aboutReviewsList}>
+            {[...Array(8)].map((_, index) => (
+              <li key={index}>
+                <img
+                  src={`/rew${index + 1}.jpg`}
+                  alt={t("about.reviewImageAlt", { number: index + 1 })}
+                  className={s.aboutReviewsItem}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h1 className={s.aboutSert}>{t("about.achievementsTitle")}</h1>
+          <ul className={s.aboutSertGaleryList}>
+            {[...Array(6)].map((_, index) => (
+              <li key={index}>
+                <img
+                  src={`/ser${index + 1}.jpg`}
+                  alt={t("about.achievementImageAlt", { number: index + 1 })}
+                  className={s.aboutSertGaleryItem}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
+
 export default About;

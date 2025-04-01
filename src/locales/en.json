@@ -1,0 +1,29 @@
+{
+  "home": {
+    "name": "Natalia Nazarenko",
+    "profession": "Nutritionist and health coach",
+    "slogan": "Life is good when you chew leisurely!😊",
+    "homeImageAlt": "Home image"
+  },
+  "about": {
+    "aboutImageAlt": "About image",
+    "aboutText": "I am Natalia Nazarenko. Born in 1981. I have been running since I was 14 years old. Since 2016, I have been a curator of body cleansing marathons. Using food, not fasting or juices. Thanks to me, thousands of people have stopped exhausting themselves with diets and have learned to eat properly, relying on their internal indicators and tests. I am against restrictions and diets. I support mindful eating and adequate physical activity. Food is our fuel. My mission is to teach you how to nourish yourself properly.",
+    "clientReviewsTitle": "My clients about me",
+    "reviewImageAlt": "Review {number}",
+    "achievementsTitle": "My achievements",
+    "achievementImageAlt": "Certificate {number}"
+  },
+  "header": {
+    "about": "About me",
+    "forWhom": "For whom",
+    "usefulInfo": "Useful information",
+    "services": "Services",
+    "reviews": "Reviews",
+    "consultation": "Book a consultation!",
+    "logoAlt": "Nazarenko Vitality Logo",
+    "instagramAlt": "Instagram",
+    "viberAlt": "Viber",
+    "facebookAlt": "Facebook",
+    "telegramAlt": "Telegram"
+  }
+}

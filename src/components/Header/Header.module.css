@@ -119,6 +119,32 @@
   width: 35px;
   height: 35px;
 }
+.languageSelect {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%; /* Закругленные углы */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+  appearance: none;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  background-color: transparent; /* Фон прозрачный */
+  outline: none; /* Убираем обводку */
+}
+
+/* Чтобы сохранить круглую форму, можно применить более явное закругление */
+.languageSelect:focus {
+  outline: none;
+  border: none;
+  border-radius: 50%; /* Сохраняем круглую форму при фокусе */
+}
+
+/* Дополнительный стиль при наведении */
+.languageSelect:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Немного уменьшаем тень */
+}
 
 @media screen and (min-width: 768px) {
   .header {
@@ -145,6 +171,10 @@
   }
   .consultationButton span {
     font-size: 40px;
+  }
+  .languageSelect {
+    width: 40px;
+    height: 40px;
   }
 }
 

@@ -31,7 +31,7 @@ const ForWhom = () => {
           <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
         </li>
       </ul>
-      <img src="/fotor-ai-20250330125514.jpg" alt="fotor img" />
+      <img src="/whoimg.jpg" alt="fotor img" />
     </div>
   );
 };
