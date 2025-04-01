@@ -1,11 +1,12 @@
 import { lazy, Suspense, useEffect, useState } from "react";
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Loader from "./components/Loader/Loader.jsx";
 import LanguageSelector from "./components/LanguageSelector/LanguageSelector.jsx";
 import { useTranslation } from "react-i18next";
 import "./i18n.js";
+import "./App.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Header = lazy(() => import("./components/Header/Header.jsx"));
 const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
@@ -25,6 +26,7 @@ const NotFoundPage = lazy(() =>
 const App = () => {
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
   const { i18n } = useTranslation();
+  const location = useLocation();
 
   useEffect(() => {
     const storedLang = localStorage.getItem("language") || "ru";
@@ -43,20 +45,30 @@ const App = () => {
       {showLanguageSelector && (
         <LanguageSelector onSelect={handleLanguageSelect} />
       )}
-
+      <Header />
       <Suspense fallback={<Loader />}>
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutMePage />} />
-          <Route path="/forwhom" element={<ForWhomPage />} />
-          <Route path="/usefulinfo" element={<UsefulInfoPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/reviews" element={<ReviewsPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={location.key}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ type: "spring", stiffness: 300, damping: 25 }}
+          >
+            <Routes location={location}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutMePage />} />
+              <Route path="/forwhom" element={<ForWhomPage />} />
+              <Route path="/usefulinfo" element={<UsefulInfoPage />} />
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/reviews" element={<ReviewsPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+          </motion.div>
+        </AnimatePresence>
       </Suspense>
     </div>
   );
 };
+
 export default App;
