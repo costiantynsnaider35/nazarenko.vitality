@@ -88,6 +88,47 @@
   box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.5);
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.5);
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.aboutReviewsItem,
+.aboutSertGaleryItem {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.aboutReviewsItem:hover,
+.aboutSertGaleryItem:hover {
+  transform: scale(1.01);
+}
+
 @media screen and (min-width: 768px) {
   .about {
     gap: 20px;

@@ -75,7 +75,7 @@ const FruitRain = () => {
           initial={{ y: -50, opacity: 1 }}
           animate={{
             y: "100vh",
-            opacity: showAnimation ? 1 : 0, // Плавное исчезновение через 5 секунд
+            opacity: showAnimation ? 1 : 0,
           }}
           transition={{
             duration: 4,

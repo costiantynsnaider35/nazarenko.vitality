@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PiHamburger } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 import s from "./Header.module.css";
@@ -13,10 +13,17 @@ const Header = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
+  useEffect(() => {
+    const storedLang = localStorage.getItem("lang") || "ru";
+    i18n.changeLanguage(storedLang);
+  }, [i18n]);
+
   const closeMenu = () => setMenuOpen(false);
 
   const changeLanguage = (event) => {
-    i18n.changeLanguage(event.target.value);
+    const newLang = event.target.value;
+    i18n.changeLanguage(newLang);
+    localStorage.setItem("lang", newLang);
   };
 
   return (

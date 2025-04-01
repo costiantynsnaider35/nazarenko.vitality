@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import s from "./Modal.module.css";
 import toast from "react-hot-toast";
-import { motion, AnimatePresence } from "framer-motion"; // Импортируем AnimatePresence
+import { motion, AnimatePresence } from "framer-motion";
 
 const Modal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
     fullName: "",
-    phone: "+380", // Устанавливаем начальное значение для телефона
+    phone: "+380",
     comment: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -14,7 +14,7 @@ const Modal = ({ isOpen, onClose }) => {
   useEffect(() => {
     const isAlreadySubmitted = localStorage.getItem("formSubmitted");
     if (isAlreadySubmitted === "true") {
-      setIsSubmitted(true); // Если форма уже была отправлена, блокируем возможность отправки
+      setIsSubmitted(true);
     }
   }, []);
 

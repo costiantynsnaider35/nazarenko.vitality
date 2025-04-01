@@ -27,10 +27,9 @@ const App = () => {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    if (!localStorage.getItem("language")) {
-      setShowLanguageSelector(true);
-    }
-  }, []);
+    const storedLang = localStorage.getItem("language") || "ru";
+    i18n.changeLanguage(storedLang);
+  }, [i18n]);
 
   const handleLanguageSelect = (lang) => {
     localStorage.setItem("language", lang);
