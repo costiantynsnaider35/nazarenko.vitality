@@ -14,7 +14,7 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    const storedLang = localStorage.getItem("lang") || "ru";
+    const storedLang = localStorage.getItem("lang") || "ua";
     i18n.changeLanguage(storedLang);
   }, [i18n]);
 

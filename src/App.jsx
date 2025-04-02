@@ -20,6 +20,9 @@ const ServicesPage = lazy(() =>
   import("./pages/ServicesPage/ServicesPage.jsx")
 );
 const ReviewsPage = lazy(() => import("./pages/ReviewsPage/ReviewsPage.jsx"));
+const PrivacyPolicyPage = lazy(() =>
+  import("./pages/PrivacyPolicyPage/PrivacyPolicyPage.jsx")
+);
 const NotFoundPage = lazy(() =>
   import("./pages/NotFoundPage/NotFoundPage.jsx")
 );
@@ -58,6 +61,7 @@ const App = () => {
               <Route path="/usefulinfo" element={<UsefulInfoPage />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/reviews" element={<ReviewsPage />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </motion.div>

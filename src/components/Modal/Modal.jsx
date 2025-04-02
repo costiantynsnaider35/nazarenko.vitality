@@ -1,13 +1,16 @@
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import s from "./Modal.module.css";
 import toast from "react-hot-toast";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Modal = ({ isOpen, onClose }) => {
+  const { t } = useTranslation(); // Получаем функцию для перевода
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "+380",
     comment: "",
+    consent: false,
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -22,8 +25,18 @@ const Modal = ({ isOpen, onClose }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const handleConsentChange = (e) => {
+    setFormData({ ...formData, consent: e.target.checked }); // обновление согласия
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Проверка, что согласие получено
+    if (!formData.consent) {
+      toast.error(t("modal.consentError"));
+      return;
+    }
 
     if (isSubmitted) return;
 
@@ -61,15 +74,14 @@ const Modal = ({ isOpen, onClose }) => {
       setIsSubmitted(true);
       setFormData({
         fullName: "",
-        phone: "+380", // Сбрасываем поле телефона
+        phone: "+380",
         comment: "",
+        consent: false,
       });
-      toast.success("Вы успешно записались на бесплатную консультацию!");
+      toast.success(t("modal.success"));
       onClose();
     } catch {
-      toast.error(
-        "Извините, произошла ошибка при записи на бесплатную консультацию! Попробуйте, пожалуйста, еще раз!"
-      );
+      toast.error(t("modal.error"));
     }
   };
 
@@ -95,14 +107,11 @@ const Modal = ({ isOpen, onClose }) => {
             <button className={s.closeButton} onClick={onClose}>
               ×
             </button>
-            <h2 className={s.modalTitle}>Запись на бесплатную консультацию</h2>
-            <p className={s.modalItem}>
-              Первая бесплатная консультация длится 15-30 минут. Оставьте свои
-              данные, и я обязательно Вам перезвоню!
-            </p>
+            <h2 className={s.modalTitle}>{t("modal.title")}</h2>
+            <p className={s.modalItem}>{t("modal.description")}</p>
             <form className={s.modalForm} onSubmit={handleSubmit}>
               <div className={s.formGroup}>
-                <label htmlFor="fullName">Имя и фамилия</label>
+                <label htmlFor="fullName">{t("modal.fullName")}</label>
                 <input
                   type="text"
                   name="fullName"
@@ -115,7 +124,7 @@ const Modal = ({ isOpen, onClose }) => {
                 />
               </div>
               <div className={s.formGroup}>
-                <label htmlFor="phone">Телефон</label>
+                <label htmlFor="phone">{t("modal.phone")}</label>
                 <input
                   type="tel"
                   name="phone"
@@ -128,23 +137,45 @@ const Modal = ({ isOpen, onClose }) => {
                 />
               </div>
               <div className={s.formGroup}>
-                <label htmlFor="comment">Комментарий</label>
+                <label htmlFor="comment">{t("modal.comment")}</label>
                 <textarea
                   name="comment"
                   id="comment"
                   value={formData.comment}
                   onChange={handleChange}
-                  rows="4"
+                  rows="2"
                   className={s.modalInput}
                   disabled={isSubmitted}
                 />
               </div>
+              <div className={s.formGroupPolicy}>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="consent"
+                    checked={formData.consent}
+                    onChange={handleConsentChange}
+                    required
+                  />
+                  <span>
+                    {t("modal.consent")}
+                    <a href="/privacy-policy" target="_blank">
+                      {t("modal.privacyPolicyLinkText")}
+                    </a>
+                  </span>
+                </label>
+              </div>
+
               <button
                 className={s.modalBtn}
                 type="submit"
                 disabled={isSubmitted}
               >
-                <span>{isSubmitted ? "Вы уже записались" : "Записаться"}</span>
+                <span>
+                  {isSubmitted
+                    ? t("modal.alreadySubmitted")
+                    : t("modal.submit")}
+                </span>
               </button>
             </form>
           </motion.div>

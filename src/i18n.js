@@ -11,7 +11,7 @@ const resources = {
   en: { translation: translationEN },
 };
 
-const storedLanguage = localStorage.getItem("language") || "ru";
+const storedLanguage = localStorage.getItem("language") || "ua";
 
 i18n.use(initReactI18next).init({
   resources,
