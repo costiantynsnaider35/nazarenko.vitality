@@ -9,9 +9,9 @@
     "aboutImageAlt": "About image",
     "aboutText": "I am Natalia Nazarenko. Born in 1981. I have been running since I was 14 years old. Since 2016, I have been a curator of body cleansing marathons. Using food, not fasting or juices. Thanks to me, thousands of people have stopped exhausting themselves with diets and have learned to eat properly, relying on their internal indicators and tests. I am against restrictions and diets. I support mindful eating and adequate physical activity. Food is our fuel. My mission is to teach you how to nourish yourself properly.",
     "clientReviewsTitle": "What my clients associate me with",
-    "reviewImageAlt": "Review {number}",
+    "reviewImageAlt": "Review image",
     "achievementsTitle": "My achievements",
-    "achievementImageAlt": "Certificate {number}"
+    "achievementImageAlt": "Certificate image"
   },
   "header": {
     "about": "About me",
@@ -70,5 +70,9 @@
     "dataSecurityDescription": "We take all necessary measures to ensure the security of your data. Data transmission occurs over secure channels, and the data will not be shared with third parties except as required by law.",
     "dataConsentTitle": "5. Consent to Data Processing",
     "dataConsentDescription": "By submitting your data through the form on the website, you consent to the processing of your personal data in accordance with this Privacy Policy."
+  },
+  "reviews": {
+    "title": "Reviews",
+    "reviewsImageAlt": "Reviews image"
   }
 }

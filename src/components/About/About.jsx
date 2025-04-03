@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import s from "./About.module.css";
 import { motion, AnimatePresence } from "framer-motion";
+
 const About = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);

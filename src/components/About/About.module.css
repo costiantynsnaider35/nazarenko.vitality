@@ -179,7 +179,7 @@
     display: flex;
     flex-direction: row;
     width: auto;
-    gap: 30px;
+    gap: 20px;
   }
   .aboutTitle {
     width: 751px;
@@ -193,7 +193,7 @@
   }
   .aboutSertGaleryList {
     display: grid;
-    grid-template-columns: repeat(2, 375px);
+    grid-template-columns: repeat(2, 365px);
     grid-template-rows: repeat(3, 404px);
     width: 705px;
     gap: 10px;
