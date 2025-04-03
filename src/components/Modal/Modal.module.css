@@ -112,12 +112,10 @@
   justify-content: flex-start;
 }
 .formGroupPolicy span {
-  font-size: 10px;
+  font-size: 12px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: block;
-  width: 100%;
+  width: 320px;
 }
 .formGroupPolicy a {
   margin-left: 3px;
