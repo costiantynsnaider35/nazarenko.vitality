@@ -47,14 +47,7 @@ const Reviews = () => {
           ))}
         </div>
       ) : (
-        // Карусель
         <div className={s.carouselContainer}>
-          <button
-            className={`${s.carouselButton} ${s.leftButton}`}
-            onClick={handlePrev}
-          >
-            ❮
-          </button>
           <div className={s.reviewsCard}>
             <img
               src={images[currentIndex]}
@@ -62,12 +55,15 @@ const Reviews = () => {
               className={s.reviewsImg}
             />
           </div>
-          <button
-            className={`${s.carouselButton} ${s.rightButton}`}
-            onClick={handleNext}
-          >
-            ❯
-          </button>
+
+          <div className={s.carouselButtonsContainer}>
+            <button className={s.carouselButton} onClick={handlePrev}>
+              ❮
+            </button>
+            <button className={s.carouselButton} onClick={handleNext}>
+              ❯
+            </button>
+          </div>
         </div>
       )}
     </div>

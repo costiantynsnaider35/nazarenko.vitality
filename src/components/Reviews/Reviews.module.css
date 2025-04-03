@@ -16,20 +16,12 @@
     4px 4px 0 #eaf7e1;
 }
 
-.carouselContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  position: relative;
-}
-
 .reviewsCard {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 340px;
-  height: 450px;
+  width: 350px;
+  height: 500px;
 }
 
 .reviewsImg {
@@ -37,17 +29,24 @@
   max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  border-radius: 10px;
   border: 2px solid transparent;
   box-shadow: 0px 0px 10px rgba(255, 0, 150, 0.5);
 }
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
 
 .carouselButton {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
   background: linear-gradient(135deg, #ff0080, #ff8c00);
   color: white;
-  font-size: 16px;
-  width: 22px;
-  height: 22px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -67,15 +66,13 @@
   transform: scale(0.95);
 }
 
-.leftButton {
-  position: absolute;
-  left: -7px;
+.carouselButtonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-.rightButton {
-  position: absolute;
-  right: -7px;
-}
 @media screen and (min-width: 768px) {
   .reviews {
     gap: 20px;
@@ -89,9 +86,9 @@
     height: 650px;
   }
   .carouselButton {
+    width: 60px;
+    height: 60px;
     font-size: 24px;
-    width: 40px;
-    height: 40px;
   }
 }
 @media screen and (min-width: 1440px) {
