@@ -10,8 +10,11 @@ const Services = () => {
     <div className={s.services}>
       {servicesData.map((service, index) => (
         <div key={index} className={s.servicesCard}>
-          <h2 className={s.servicesTitle}>{service.title}</h2>
-          <p className={s.servicesDesc}>{service.description}</p>
+          <div className={s.titleContainer}>
+            <h2 className={s.servicesTitle}>{service.title}</h2>
+            <p className={s.servicesDesc}>{service.description}</p>
+          </div>
+
           <img
             src={service.image}
             alt={`Img ${service.title}`}
