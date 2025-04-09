@@ -34,7 +34,7 @@
 .servicesImg {
   border-radius: 5px;
   object-fit: cover;
-  width: 100%;
+  width: 345px;
   height: 300px;
 }
 
@@ -65,7 +65,7 @@
     padding: 20px 0;
   }
   .servicesCard {
-    width: 344px;
+    width: 350px;
     height: 645px;
   }
 }
@@ -75,11 +75,14 @@
   }
 
   .servicesCard {
-    width: 465px;
+    width: 475px;
     height: 580px;
     justify-content: space-between;
     cursor: pointer;
     transition: transform 0.3s ease;
+  }
+  .servicesImg {
+    width: 100%;
   }
   .servicesBtn a {
     font-size: 24px;
