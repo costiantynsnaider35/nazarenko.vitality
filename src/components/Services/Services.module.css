@@ -1,12 +1,11 @@
 .services {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 15px;
   padding: 10px 0;
-  width: 100%;
-  max-width: 355px;
-  margin: 0 auto;
+  gap: 15px;
+  width: auto;
 }
 
 .servicesCard {
@@ -16,9 +15,7 @@
   justify-content: center;
   padding: 10px;
   gap: 10px;
-  width: 100%;
-  max-width: 355px;
-  box-sizing: border-box;
+  width: 355px;
   height: 100%;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
@@ -33,6 +30,8 @@
   justify-content: center;
   gap: 5px;
   width: 335px;
+  width: 100%;
+  height: 100%;
 }
 .servicesTitle {
   font-size: 20px;
@@ -42,12 +41,14 @@
 .servicesDesc {
   font-size: 16px;
   font-weight: 500;
+  text-align: left;
 }
 
 .servicesImg {
   border-radius: 5px;
   object-fit: cover;
-  width: 100%;
+  width: 335px;
+  height: 100%;
 }
 
 .servicesBtn {
@@ -71,46 +72,44 @@
 }
 @media screen and (min-width: 768px) {
   .services {
+    gap: 10px;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .servicesCard {
-    justify-content: space-between;
-    width: 345px;
-    height: 600px;
-  }
-  .titleContainer {
-    width: 345px;
-  }
-  .servicesImg {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .services {
-    width: auto;
-    gap: 10px;
-  }
 
   .servicesCard {
-    justify-content: space-evenly;
-    width: 472px;
-    height: 600px;
-    transition: transform 0.3s ease;
-  }
-  .titleContainer {
-    width: 462px;
-  }
-  .servicesImg {
-    width: 100%;
-    height: 350px;
+    padding: 5px;
+    gap: 5px;
+    width: 364px;
+    height: 640px;
+    justify-content: space-between;
   }
   .servicesTitle {
     font-size: 22px;
   }
   .servicesDesc {
     font-size: 18px;
+  }
+
+  .servicesImg {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .services {
+    width: auto;
+    gap: 20px;
+  }
+
+  .servicesCard {
+    width: 485px;
+    height: 620px;
+    transition: all 0.3s ease;
+  }
+
+  .servicesImg {
+    width: 100%;
+    height: 360px;
   }
   .servicesBtn a {
     font-size: 24px;
