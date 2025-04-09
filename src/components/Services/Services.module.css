@@ -15,7 +15,7 @@
   justify-content: center;
   padding: 10px;
   gap: 10px;
-  width: 355px;
+  width: 335px;
   height: 100%;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
-  width: 335px;
+  width: 315px;
   width: 100%;
   height: 100%;
 }
@@ -47,7 +47,7 @@
 .servicesImg {
   border-radius: 5px;
   object-fit: cover;
-  width: 335px;
+  width: 315px;
   height: 100%;
 }
 
