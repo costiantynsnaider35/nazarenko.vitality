@@ -17,6 +17,7 @@ const PrivacyPolicy = () => {
           <li>-{t("privacyPolicy.fullName")}</li>
           <li>-{t("privacyPolicy.phoneNumber")}</li>
           <li>-{t("privacyPolicy.comment")}</li>
+          <li>-{t("privacyPolicy.paymentDetails")}</li>
         </ul>
         <p>{t("privacyPolicy.dataUseDescription")}</p>
       </div>
@@ -26,6 +27,7 @@ const PrivacyPolicy = () => {
           2.{t("privacyPolicy.dataProcessingTitle")}
         </h2>
         <p>{t("privacyPolicy.dataProcessingDescription")}</p>
+        <p>{t("privacyPolicy.paymentProcessingDescription")}</p>
         <p>{t("privacyPolicy.chatBotPolicyDescription")}</p>
         <p>
           {t("privacyPolicy.chatBotPolicyLinkText")}{" "}

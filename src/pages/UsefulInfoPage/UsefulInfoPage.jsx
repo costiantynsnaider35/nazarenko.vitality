@@ -1,4 +1,10 @@
+import Copyright from "../../components/Copyright/Copyright.jsx";
+
 const UsefulInfoPage = () => {
-  return <div>UsefulInfoPage</div>;
+  return (
+    <div>
+      <Copyright />
+    </div>
+  );
 };
 export default UsefulInfoPage;

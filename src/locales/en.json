@@ -58,14 +58,16 @@
     "fullName": "User’s full name",
     "phoneNumber": "Phone number",
     "comment": "Comment (optional)",
-    "dataUseDescription": "This data is necessary to contact you and schedule a free consultation. The data is passed to a chatbot for processing the request.",
+    "paymentDetails": "Payment details (when using WayForPay)",
+    "dataUseDescription": "This data is necessary to contact you and schedule a free consultation. The data is passed to a chatbot for processing the request, and also to WayForPay for payment processing.",
     "dataProcessingTitle": "2.Data Processing",
     "dataProcessingDescription": "After submission, the data is sent to a chatbot, which uses it to organize the consultation. Messages containing your data will be stored in the chatbot for two weeks (14 days) from submission and will then be automatically deleted.",
+    "paymentProcessingDescription": "Payment data may be passed to WayForPay for processing payments. WayForPay has its own Privacy Policy.",
     "chatBotPolicyDescription": "The chatbot has its own Privacy Policy, which we recommend you review. We do not store your data on our servers and do not share it with third parties.",
     "chatBotPolicyLinkText": "Link to the chatbot's Privacy Policy:",
     "chatBotPolicyLink": "Chatbot Privacy Policy",
     "dataUsageTitle": "3.Data Usage",
-    "dataUsageDescription": "Your data will only be used to process your request for a free consultation. We may contact you by phone or through other communication channels to confirm your appointment or clarify information.",
+    "dataUsageDescription": "Your data will only be used to process your request for a free consultation and perform payments through WayForPay. We may contact you by phone or through other communication channels to confirm your appointment or clarify information.",
     "dataSecurityTitle": "4.Data Security",
     "dataSecurityDescription": "We take all necessary measures to ensure the security of your data. Data transmission occurs over secure channels, and the data will not be shared with third parties except as required by law.",
     "dataConsentTitle": "5.Consent to Data Processing",
@@ -74,5 +76,70 @@
   "reviews": {
     "title": "Reviews",
     "reviewsImageAlt": "Reviews image"
-  }
+  },
+  "services": [
+    {
+      "title": "1.Group Work. Nutrition Program for Detoxification.",
+      "description": "Using a balanced nutrition method. Duration: 21 days. Includes 200 workout sessions for home use. After completion, detoxification of the liver, skin renewal, and a loss of 5-7 kg of fat. Based on the long-living diet system. Access is permanent. The program is updated every spring.",
+      "button": "Order Service",
+      "image": "/serv1.jpeg",
+      "link": "https://secure.wayforpay.com/button/bbae70f1e03a8"
+    },
+    {
+      "title": "2.Nutrition Program for Body Rejuvenation.",
+      "description": "No hunger or juices required. Based on the research of Valter Longo. 10-day program including yoga and lymphatic exercises. Permanent access. Updated twice a year.",
+      "button": "Order Service",
+      "image": "/serv2.jpeg",
+      "link": "https://secure.wayforpay.com/button/bfad5a486f679"
+    },
+    {
+      "title": "3.Group Work 'Foundation of Women's Health'.",
+      "description": "Introduction to the nuances of female organs, disease causes, and recovery methods. Participation by donation.",
+      "button": "Order Service",
+      "image": "/serv3.jpeg",
+      "link": "https://secure.wayforpay.com/button/bc4017adc87ea"
+    },
+    {
+      "title": "4.40-minute Mini-Consultation Based on Your Questionnaire.",
+      "description": "Review of dietary mistakes, adjustment of the nutrition plan. Exclusion of interfering products.",
+      "button": "Order Service",
+      "image": "/serv4.jpeg",
+      "link": "https://secure.wayforpay.com/button/bbae70f1e03a8"
+    },
+    {
+      "title": "5.Individual Work. Nutrition Plan Based on Your Tests.",
+      "description": "Personalized menu for 14 days. Nutraceutical selection, adjusting the nutrition plan according to your needs. Answers to questions.",
+      "button": "Order Service",
+      "image": "/serv5.jpeg",
+      "link": "https://secure.wayforpay.com/button/b4e3db14dcb26"
+    },
+    {
+      "title": "6.Individual Consultation Based on Tests.",
+      "description": "21-day menu. Nutraceutical selection. One month of support. A file with recommendations.",
+      "button": "Order Service",
+      "image": "/serv6.jpeg",
+      "link": "https://secure.wayforpay.com/button/b8ee14111a2ca"
+    },
+    {
+      "title": "7.Nutrition Program for Thrush.",
+      "description": "Designed for 35 days. Used after mucosal recovery. Helps reduce cravings for sweets and flour.",
+      "button": "Order Service",
+      "image": "/serv1.jpeg",
+      "link": "https://secure.wayforpay.com/button/be66287a665f7"
+    },
+    {
+      "title": "8.Nutrition Program for Thrush.",
+      "description": "Designed for 35 days. Used after mucosal recovery. Helps reduce cravings for sweets and flour.",
+      "button": "Order Service",
+      "image": "/serv1.jpeg",
+      "link": "https://secure.wayforpay.com/button/be66287a665f7"
+    },
+    {
+      "title": "9.Nutrition Program for Thrush.",
+      "description": "Designed for 35 days. Used after mucosal recovery. Helps reduce cravings for sweets and flour.",
+      "button": "Order Service",
+      "image": "/serv1.jpeg",
+      "link": "https://secure.wayforpay.com/button/be66287a665f7"
+    }
+  ]
 }
