@@ -23,16 +23,23 @@
   font-size: 20px;
   font-weight: 700;
   text-align: center;
+  line-height: 1.5;
+  word-wrap: break-word;
+  letter-spacing: 0.5px;
 }
 .servicesDesc {
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  word-wrap: break-word;
+  letter-spacing: 0.5px;
 }
 
 .servicesImg {
   border-radius: 5px;
   object-fit: cover;
-  height: 300px;
+  width: 100%;
 }
 
 .servicesBtn {
@@ -63,13 +70,7 @@
   }
   .servicesCard {
     width: 350px;
-    height: 645px;
-  }
-  .servicesTitle {
-    width: auto;
-  }
-  .servicesDesc {
-    width: auto;
+    height: 680px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -79,14 +80,14 @@
 
   .servicesCard {
     width: 475px;
-    height: 580px;
-    justify-content: space-between;
+    height: 600px;
     cursor: pointer;
     transition: transform 0.3s ease;
   }
 
   .servicesImg {
     width: 100%;
+    height: 200px;
   }
   .servicesTitle {
     font-size: 22px;
