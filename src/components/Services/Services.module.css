@@ -15,7 +15,6 @@
   padding: 5px;
   gap: 5px;
   width: 345px;
-  height: 100%;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
     0px 0px 15px rgba(179, 229, 171, 0.5), 0px 0px 15px rgba(111, 207, 151, 0.5),
@@ -34,7 +33,7 @@
 .servicesImg {
   border-radius: 5px;
   object-fit: cover;
-  width: 345px;
+  width: 335px;
   height: 300px;
 }
 
