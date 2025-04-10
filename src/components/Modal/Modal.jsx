@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Modal = ({ isOpen, onClose }) => {
-  const { t } = useTranslation(); // Получаем функцию для перевода
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "+380",
@@ -26,13 +26,12 @@ const Modal = ({ isOpen, onClose }) => {
   };
 
   const handleConsentChange = (e) => {
-    setFormData({ ...formData, consent: e.target.checked }); // обновление согласия
+    setFormData({ ...formData, consent: e.target.checked });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Проверка, что согласие получено
     if (!formData.consent) {
       toast.error(t("modal.consentError"));
       return;
@@ -51,8 +50,8 @@ const Modal = ({ isOpen, onClose }) => {
     Время отправки: ${dateString}
     `;
 
-    const botToken = "7893371510:AAHhfkROg7T_KdaRzLAvO0V1lpDQwA05SsM";
-    const chatId = "370137018";
+    const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+    const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
     const payload = {
