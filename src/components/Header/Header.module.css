@@ -6,6 +6,11 @@
   line-height: 10px;
   letter-spacing: -1px;
   transition: color 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
+    0px 0px 15px rgba(179, 229, 171, 0.5), 0px 0px 15px rgba(111, 207, 151, 0.5),
+    0px 0px 15px rgba(61, 166, 111, 0.5), 0px 0px 15px rgba(31, 122, 84, 0.5);
+  padding: 20px;
 }
 .active {
   color: #d50a1e;
@@ -211,6 +216,10 @@
 
   .menuButton {
     display: none;
+  }
+  .link {
+    box-shadow: none;
+    padding: 0px;
   }
 
   .link:hover {

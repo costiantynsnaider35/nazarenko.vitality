@@ -7,7 +7,7 @@ const ForWhom = () => {
   return (
     <div className={s.whom}>
       <ul className={s.whomList}>
-        <h1 className={s.whomTitle}>{t("forWhom.title")}</h1>
+        <h2 className={s.whomTitle}>{t("forWhom.title")}</h2>
         {t("forWhom.items", { returnObjects: true }).map((text, index) => (
           <li key={index} className={s.whomItem}>
             <span>{text}</span>

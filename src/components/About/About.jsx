@@ -26,12 +26,12 @@ const About = () => {
           alt={t("about.aboutImageAlt")}
           className={s.aboutImg}
         />
-        <h1 className={s.aboutTitle}>{t("about.aboutText")}</h1>
+        <h2 className={s.aboutTitle}>{t("about.aboutText")}</h2>
       </div>
 
       <div className={s.aboutContainer2}>
-        <div>
-          <h1 className={s.aboutReviews}>{t("about.clientReviewsTitle")}</h1>
+        <div className={s.sertContainer}>
+          <h2 className={s.aboutReviews}>{t("about.clientReviewsTitle")}</h2>
           <ul className={s.aboutReviewsList}>
             {[...Array(8)].map((_, index) => (
               <li key={index}>
@@ -46,8 +46,8 @@ const About = () => {
           </ul>
         </div>
 
-        <div>
-          <h1 className={s.aboutSert}>{t("about.achievementsTitle")}</h1>
+        <div className={s.sertContainer}>
+          <h2 className={s.aboutSert}>{t("about.achievementsTitle")}</h2>
           <ul className={s.aboutSertGaleryList}>
             {[...Array(6)].map((_, index) => (
               <li key={index}>
