@@ -1,1 +1,24 @@
-
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  width: auto;
+}
+.infoTitle {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  word-spacing: 1px;
+  text-shadow: 1px 1px 0 #3da66f, 2px 2px 0 #6fcf97, 3px 3px 0 #b3e5ab,
+    4px 4px 0 #eaf7e1;
+}
+.infoImg {
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
+    0px 0px 15px rgba(179, 229, 171, 0.5), 0px 0px 15px rgba(111, 207, 151, 0.5),
+    0px 0px 15px rgba(61, 166, 111, 0.5), 0px 0px 15px rgba(31, 122, 84, 0.5);
+}
