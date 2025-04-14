@@ -108,31 +108,34 @@
 }
 .formGroupPolicy {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 320px;
   text-align: left;
 }
 
 .policyCheckboxLabel {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
   font-size: 14px;
   line-height: 1.4;
 }
 
 .policyCheckboxInput {
   transform: scale(1.2);
-  flex-shrink: 0;
   margin-right: 5px;
+  flex-shrink: 0;
 }
 
 .formGroupPolicy span {
-  display: inline;
-  font-size: inherit;
-  word-break: break-word;
+  font-size: 14px;
+  text-wrap: balance;
 }
 
 .formGroupPolicy a {
+  font-size: 14px;
   color: #007bff;
   margin-left: 4px;
   text-decoration: underline;
