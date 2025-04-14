@@ -11,7 +11,7 @@ const Services = () => {
       {servicesData.map((service, index) => (
         <div key={index} className={s.servicesCard}>
           <div className={s.titleContainer}>
-            <h2 className={s.servicesTitle}>{service.title}</h2>
+            <h1 className={s.servicesTitle}>{service.title}</h1>
             <p className={s.servicesDesc}>{service.description}</p>
           </div>
 

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   padding: 10px 0;
   width: auto;
 }
@@ -34,9 +34,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 330px;
-  max-width: 100%;
-  padding: 5px;
+  padding: 0 15px;
   font-size: 22px;
   font-weight: 500;
   text-align: justify;
@@ -53,6 +51,8 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 5px;
+  text-shadow: 1px 1px 0 #3da66f, 2px 2px 0 #6fcf97, 3px 3px 0 #b3e5ab,
+    4px 4px 0 #eaf7e1;
 }
 .aboutReviewsList {
   display: grid;
@@ -76,12 +76,16 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
     0px 0px 15px rgba(179, 229, 171, 0.5), 0px 0px 15px rgba(111, 207, 151, 0.5),
     0px 0px 15px rgba(61, 166, 111, 0.5), 0px 0px 15px rgba(31, 122, 84, 0.5);
+  height: auto;
+  padding: 5px;
 }
 .aboutSert {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 5px;
+  text-shadow: 1px 1px 0 #3da66f, 2px 2px 0 #6fcf97, 3px 3px 0 #b3e5ab,
+    4px 4px 0 #eaf7e1;
 }
 .aboutSertGaleryList {
   display: grid;
@@ -157,8 +161,6 @@
     object-position: 10% 68%;
   }
   .aboutTitle {
-    width: 744px;
-    justify-content: flex-start;
     font-size: 32px;
   }
   .aboutReviews {
@@ -193,8 +195,9 @@
   }
   .aboutContainer2 {
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: row;
-    width: auto;
     gap: 20px;
   }
   .aboutTitle {
@@ -202,16 +205,17 @@
     padding: 0 15px;
   }
   .aboutReviewsList {
-    grid-template-columns: repeat(2, 350px);
+    display: grid;
+    grid-template-columns: repeat(2, 370px);
     grid-template-rows: repeat(4, 300px);
+    justify-content: center;
     gap: 10px;
-    width: 705px;
   }
   .aboutSertGaleryList {
     display: grid;
-    grid-template-columns: repeat(2, 365px);
+    grid-template-columns: repeat(2, 350px);
     grid-template-rows: repeat(3, 404px);
-    width: 705px;
+    justify-content: center;
     gap: 10px;
   }
 }
