@@ -179,12 +179,13 @@
 
   .policyCheckboxInput {
     transform: scale(1.5);
+    margin-right: 10px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .formGroupPolicy input[type="checkbox"] {
-    transform: scale(1.3);
+  .policyCheckboxInput {
+    transform: scale(1.7);
   }
   .modalBtn:hover {
     transform: scale(1.1);
