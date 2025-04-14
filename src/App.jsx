@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./i18n.js";
 import "./App.css";
+import CookieConsent from "./components/CookieConsent/CookieConsent.jsx";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
 const AboutMePage = lazy(() => import("./pages/AboutMePage/AboutMePage.jsx"));
@@ -67,6 +68,7 @@ const App = () => {
           </motion.div>
         </AnimatePresence>
       </Suspense>
+      <CookieConsent />
     </div>
   );
 };

@@ -141,5 +141,10 @@
       "image": "/serv9.jpeg",
       "link": "https://secure.wayforpay.com/button/b8f40a09335af"
     }
-  ]
+  ],
+  "cookieConsent": {
+    "text": "This website uses cookies to improve service quality. Learn more in the ",
+    "privacyPolicy": "Privacy Policy",
+    "accept": "Accept"
+  }
 }

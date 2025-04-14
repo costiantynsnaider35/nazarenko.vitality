@@ -141,5 +141,10 @@
       "image": "/serv9.jpeg",
       "link": "https://secure.wayforpay.com/button/b8f40a09335af"
     }
-  ]
+  ],
+  "cookieConsent": {
+    "text": "Цей сайт використовує cookies для покращення якості обслуговування. Детальніше в ",
+    "privacyPolicy": "Політиці конфіденційності",
+    "accept": "Прийняти"
+  }
 }
