@@ -108,22 +108,22 @@
 }
 .formGroupPolicy {
   display: flex;
-  flex-direction: column;
-  width: 320px;
+  flex-direction: row;
   text-align: left;
 }
 
-.formGroupPolicy label {
+.policyCheckboxLabel {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 14px;
-  gap: 8px;
   line-height: 1.4;
 }
 
-.formGroupPolicy input[type="checkbox"] {
-  transform: scale(1);
+.policyCheckboxInput {
+  transform: scale(1.2);
   flex-shrink: 0;
+  margin-right: 5px;
 }
 
 .formGroupPolicy span {
@@ -173,12 +173,12 @@
     width: 550px;
   }
 
-  .formGroupPolicy label {
+  .policyCheckboxLabel {
     font-size: 24px;
   }
 
-  .formGroupPolicy input[type="checkbox"] {
-    transform: scale(1.2);
+  .policyCheckboxInput {
+    transform: scale(1.5);
   }
 }
 

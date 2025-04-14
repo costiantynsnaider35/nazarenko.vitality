@@ -148,8 +148,9 @@ const Modal = ({ isOpen, onClose }) => {
                 />
               </div>
               <div className={s.formGroupPolicy}>
-                <label>
+                <label className={s.policyCheckboxLabel}>
                   <input
+                    className={s.policyCheckboxInput}
                     type="checkbox"
                     name="consent"
                     checked={formData.consent}
