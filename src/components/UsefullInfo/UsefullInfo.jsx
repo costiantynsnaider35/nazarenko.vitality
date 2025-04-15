@@ -9,7 +9,7 @@ const UsefullInfo = () => {
       <h2 className={s.infoTitle}>{t("UsefullInfo.title")}</h2>
       <img
         className={s.infoImg}
-        src="/public/plate.jpg"
+        src="/plate.jpg"
         alt={t("UsefullInfo.altImg")}
       />
     </div>
