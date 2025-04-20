@@ -103,14 +103,14 @@
       "title": "4.Мини-консультация на 40 минут на базе вашей анкеты.",
       "description": "Разбор ошибок в питании, корректировка рациона. Исключение мешающих продуктов.",
       "button": "Заказать услугу",
-      "image": "/serv4.jpeg",
+      "image": "/consultation.PNG",
       "link": "https://secure.wayforpay.com/button/bbae70f1e03a8"
     },
     {
       "title": "5.Индивидуальная работа. Составление рациона на основе анализов.",
       "description": "Персональное меню на 14 дней. Подбор нутрицевтиков, адаптация рациона под запрос. Ответы на вопросы.",
       "button": "Заказать услугу",
-      "image": "/serv5.jpeg",
+      "image": "/ration.PNG",
       "link": "https://secure.wayforpay.com/button/b4e3db14dcb26"
     },
     {
@@ -124,7 +124,7 @@
       "title": "7.Рацион питания от молочницы.",
       "description": "Рассчитан на 35 дней. Используется после восстановления слизистых. Помогает избавиться от тяги к сладкому и мучному.",
       "button": "Заказать услугу",
-      "image": "/serv7.jpeg",
+      "image": "/ration mol.PNG",
       "link": "https://secure.wayforpay.com/button/be66287a665f7"
     },
     {
@@ -149,6 +149,9 @@
   },
   "UsefullInfo": {
     "title": "Тарелка здорового питания:",
-    "altImg": "Тарелка здорового питания"
+    "altImg": "Тарелка здорового питания",
+    "altRec1": "rec1 img",
+    "altRec2": "rec2 img",
+    "altRec3": "rec3 img"
   }
 }

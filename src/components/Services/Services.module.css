@@ -122,22 +122,25 @@
   .servicesCard:nth-child(3) .servicesImg {
     object-position: 0 31%;
   }
-  /* .servicesCard:nth-child(4) .servicesImg  {
-    position: 10% 50%;
+  .servicesCard:nth-child(4) .servicesImg {
+    object-position: center;
+    height: 430px;
   }
-  .servicesCard:nth-child(5) .servicesImg  {
-    position: 10% 50%;
+  .servicesCard:nth-child(5) .servicesImg {
+    object-position: 0 27%;
+    height: 430px;
   }
-  .servicesCard:nth-child(6) .servicesImg  {
+  /* .servicesCard:nth-child(6) .servicesImg {
     position: 10% 50%;
+  } */
+  .servicesCard:nth-child(7) .servicesImg {
+    object-position: center;
+    height: 430px;
   }
-  .servicesCard:nth-child(7) .servicesImg  {
+  /* .servicesCard:nth-child(8) .servicesImg {
     position: 10% 50%;
-  }
-  .servicesCard:nth-child(8) .servicesImg  {
-    position: 10% 50%;
-  }
-  .servicesCard:nth-child(9) .servicesImg  {
+  } */
+  /* .servicesCard:nth-child(9) .servicesImg {
     position: 10% 50%;
   } */
   .servicesBtn {
