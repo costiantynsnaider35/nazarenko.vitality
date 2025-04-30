@@ -17,17 +17,17 @@ const UsefullInfo = () => {
 
       <img
         className={s.infoImgRec}
-        src="/public/rec1.PNG"
+        src="/rec1.PNG"
         alt={t("UsefullInfo.altRec1")}
       />
       <img
         className={s.infoImgRec}
-        src="/public/rec2.PNG"
+        src="/rec2.PNG"
         alt={t("UsefullInfo.altRec2")}
       />
       <img
         className={s.infoImgRec}
-        src="/public/rec3.PNG"
+        src="/rec3.PNG"
         alt={t("UsefullInfo.altRec3")}
       />
       <img
